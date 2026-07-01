@@ -1,0 +1,26 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "brcm,bcm2711";
+
+    fragment@0 {
+        target = <&i2c1>;
+
+        __overlay__ {
+            #address-cells = <1>;
+            #size-cells = <0>;
+            status = "okay";
+
+            mma8452q@1c {
+                compatible = "nxp,mma8452q";
+                reg = <0x1c>;
+
+                interrupt-parent = <&gpio>;
+                interrupts = <17 8>;
+
+                status = "okay";
+            };
+        };
+    };
+};
