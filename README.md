@@ -97,8 +97,8 @@ mma8452q-linux-iio-driver/
 ├── user-space/
 │   └── mma8452q_gui.py
 ├── docs/
-│   ├── Licenta.pdf
-│   └── Prezentare.pdf
+│   └── Licenta.pdf
+│   
 └── README.md
 ```
 
